@@ -6,8 +6,8 @@ const CartBtn = () => {
       <span>
         <CartIcon />
       </span>
-      <span>Cart </span>
-      <span>
+      <span>Your Cart </span>
+      <span className="cartvalue">
         {cartValue}
       </span>
     </button>
