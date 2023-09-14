@@ -1,11 +1,11 @@
-import './Header.css'
+import "./Header.css";
+import CartBtn from "./HeaderCartButton";
 const Header = () => {
-    const cartValue = 0;
   return (
-    <div className='header'>
+    <div className="header">
       <div className="logo">Indian Tandoori Meals</div>
       <div className="header-right">
-        <button>Cart {cartValue}</button>
+        <CartBtn />
       </div>
     </div>
   );
