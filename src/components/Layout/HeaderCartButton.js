@@ -3,9 +3,13 @@ const cartValue = 0;
 const CartBtn = () => {
   return (
     <button>
-      <span><CartIcon /></span>
+      <span>
+        <CartIcon />
+      </span>
       <span>Cart </span>
-      <span>{cartValue}</span>
+      <span>
+        {cartValue}
+      </span>
     </button>
   );
 };
