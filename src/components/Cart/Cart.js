@@ -1,12 +1,9 @@
 import Modal from "../UI/Modal";
 import Button from "../UI/Button";
 import "./Cart.css";
-import { Fragment } from "react";
 const Cart = props => {
   return (
-    <Fragment>
-      {props.showCart &&
-        <Modal>
+        <Modal onClose={props.showCartHandler}>
           <div>
             <p>Sushi</p>
             <hr />
@@ -20,8 +17,7 @@ const Cart = props => {
               <Button>Order</Button>
             </div>
           </div>
-        </Modal>}
-    </Fragment>
+        </Modal>
   );
 };
 export default Cart;

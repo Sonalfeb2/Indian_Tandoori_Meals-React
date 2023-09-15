@@ -3,14 +3,14 @@ import Header from "./Layout/Header";
 import Meals from "./Meals/Meals";
 import Cart from "./Cart/Cart";
 const Home = () => {
-  const [showCart,setShowCart] = useState(false)
-  const showCartHandler = () =>{
-    setShowCart(!showCart)
-  }
+  const [showCart, setShowCart] = useState(false);
+  const showCartHandler = () => {
+    setShowCart(!showCart);
+  };
   return (
     <Fragment>
       <Header showCartHandler={showCartHandler} />
-      <Cart showCart={showCart} showCartHandler={showCartHandler}/>
+      {showCart && <Cart showCartHandler={showCartHandler} />}
       <main>
         <Meals />
       </main>
