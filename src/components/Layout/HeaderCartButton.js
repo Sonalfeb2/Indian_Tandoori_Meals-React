@@ -1,8 +1,9 @@
 import CartIcon from "../Cart/CartIcon";
 const cartValue = 0;
-const CartBtn = () => {
+const CartBtn = (props) => {
+
   return (
-    <button>
+    <button onClick={()=>props.showCartHandler()}>
       <span>
         <CartIcon />
       </span>

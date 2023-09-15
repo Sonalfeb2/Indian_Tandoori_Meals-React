@@ -37,7 +37,7 @@ const AvalableMeals = () => {
   return (
     <div className="row">
       {dummyMeals.map(meal =>
-        <div className="column">
+        <div className="column" key={meal.id}>
           <div className="card">
             <img src={MealImg} alt="A table full of delecious food" />
             <h1>{meal.mealName}</h1>

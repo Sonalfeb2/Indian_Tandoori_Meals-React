@@ -2,13 +2,13 @@ import { Fragment } from "react";
 import "./Header.css";
 import CartBtn from "./HeaderCartButton";
 import MealImg from "../../assets/headerMeal.jpg";
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <header>
         <div className="logo">Indian Tandoori Meals</div>
         <div className="header-right">
-          <CartBtn />
+          <CartBtn showCartHandler ={props.showCartHandler}/>
         </div>
       </header>
       <div className="main-image">
