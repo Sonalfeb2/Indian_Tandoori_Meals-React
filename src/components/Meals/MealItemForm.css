@@ -1,0 +1,36 @@
+
+.overlay__form {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay__form input {
+    width: 3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding-left: 0.5rem;
+  }
+  .overlay__form  button {
+    font: inherit;
+    cursor: pointer;
+    background-color: rgb(62, 19, 0);
+    border: 1px solid #8a2b06;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .overlay__form  button:hover,
+  .overlay__form :active {
+    background-color: #641e03;
+    border-color: #641e03;
+  }
