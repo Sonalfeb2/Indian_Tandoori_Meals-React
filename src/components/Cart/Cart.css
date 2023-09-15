@@ -1,0 +1,12 @@
+.open_close{
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount{
+    font-weight: bold;
+    display: flex
+}
+.amount_heading{
+    width: 80%;
+}
