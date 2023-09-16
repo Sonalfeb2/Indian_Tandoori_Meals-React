@@ -39,6 +39,9 @@ const AvalableMeals = () => {
       {dummyMeals.map(meal =>
         <div className="column" key={meal.id}>
           <div className="card">
+          <div className="card__overlay">
+              <MealItemForm />
+            </div>
             <img src={MealImg} alt="A table full of delecious food" />
             <h1>{meal.mealName}</h1>
             <p>
@@ -47,9 +50,7 @@ const AvalableMeals = () => {
               </i>
             </p>
             <b>{meal.price}</b>{" "}
-            <div className="card__overlay">
-              <MealItemForm />
-            </div>
+        
           </div>
         </div>
       )}

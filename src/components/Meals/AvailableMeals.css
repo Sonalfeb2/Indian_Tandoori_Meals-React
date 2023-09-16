@@ -7,18 +7,18 @@
   }
   /* Float four columns side by side */
   .column {
-    margin-right: 10%;
-    width: 30%;
-    margin-left: 10%;
-    float: left;
-    margin-bottom: 20px;
-    padding: 0 10px;
+   height: max-content;
+    width:50%;
+    text-align:center;
+    padding:7px;
+    float:left;
   }
   
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
     .column {
+      height: max-content;
       width: 100%;
       display: block;
       margin-bottom: 20px;
@@ -27,22 +27,23 @@
   
   /* Style the counter cards */
   .card {
-    transition: all .5s ease-in;
+    position: relative;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
     text-align: center;
     background-color:#fdf9a9;
     border-radius: 14px;
+    padding:2px;
+    margin:0 auto
   }
   .card__overlay {
-    overflow: hidden;
-    margin-top: -23rem;
+    top: 0;
     position: absolute;
-    height: 50%;
-    width: 27%;
+    height:  100%;
+    border-radius: 14px;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
-    
     background-color:rgb(118 32 9 / 82%);
   }
   
