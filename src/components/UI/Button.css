@@ -1,8 +1,8 @@
 .btn {
     font: inherit;
     cursor: pointer;
-    background-color: rgb(62, 19, 0);
-    border: 1px solid #8a2b06;
+    background-color: #ed0303ba;
+    border: 1px solid white;
     color: white;
     padding: 0.25rem 2rem;
     border-radius: 20px;
@@ -11,6 +11,6 @@
 
 .btn:hover,
 .btn:active {
-    background-color: #641e03;
-    border-color: #641e03;
+    background-color:#ed0303ba;
+    border-color:#ed0303ba;
 }

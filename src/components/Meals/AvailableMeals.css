@@ -31,7 +31,6 @@
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color:#fdf9a9;
     border-radius: 14px;
     padding:2px;
     margin:0 auto
@@ -44,7 +43,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:rgb(118 32 9 / 82%);
+    background-color:#746f6ff0;
   }
   
 .card:hover .card__overlay {

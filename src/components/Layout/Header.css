@@ -1,7 +1,7 @@
 header {
     width: 100%;
     overflow: hidden;
-    background-color: rgb(118, 32, 9);
+    background-color:#ed0303ba;
     padding: 20px 10px;
 }
 
@@ -30,9 +30,9 @@ header {
 
 .header-right button {
 
-    background-color: rgb(62, 19, 0);
+    background-color:white;
     border: none;
-    color: white;
+    color: #ed0303ba;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -45,9 +45,10 @@ header {
     margin-right: 0.5rem;
 }
 .cartvalue{
+    color: white;
     border-radius: 12px;
     width: 45px;
-    background-color: rgb(118, 32, 9) ;
+    background-color: #ed0303ba ;
 }
 .main-image {
     width: 100%;
