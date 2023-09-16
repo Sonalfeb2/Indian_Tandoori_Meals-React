@@ -6,11 +6,12 @@ const MealItemForm = props => {
   const addItemRef = useRef();
   const ctx = useContext(CartContext);
   const inputHandler = () => {
-    const amount = addItemRef.current.value;
+    const count = addItemRef.current.value;
     ctx.addItem({
-      id: props.mealId,
-      foodName: props.foodName,
-      amount: Number(amount)
+      id: props.meal.id,
+      mealName: props.meal.mealName,
+      price: props.meal.price,
+      count: Number(count)
     });
   };
   return (

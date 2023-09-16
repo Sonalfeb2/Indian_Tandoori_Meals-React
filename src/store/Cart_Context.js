@@ -11,21 +11,23 @@ export const CartContextProvider = props => {
     const found = itemState.find(element => element.id === newItem.id);
     if (found) {
       const prevState = [...itemState];
-      found.amount = newItem.amount;
+      found.count = newItem.count;
       setItemState(prevState);
     } else {
       setItemState(item => [...item, { id: newItem.id, ...newItem }]);
     }
   };
   const removeItemHandler = () => {};
-
+  const totalAmount = itemState.reduce((curr,item)=>{
+    return curr = curr + (item.price*item.count)
+  },0)
   const contextValue = {
     items: itemState,
-    totalAmount: 0,
+    totalAmount: totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler
   };
-  console.log(itemState)
+  console.log(itemState,totalAmount)
   return (
     <CartContext.Provider value={contextValue}>
       {props.children}

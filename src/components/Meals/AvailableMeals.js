@@ -7,31 +7,31 @@ const AvalableMeals = () => {
       id: "M1",
       mealName: "Upma",
       des: "Healthy dish with deliciousness",
-      price: "Rs.125"
+      price: 125
     },
     {
       id: "M2",
       mealName: "Upma",
       des: "Healthy dish with deliciousness",
-      price: "Rs.125"
+      price: 125
     },
     {
       id: "M3",
       mealName: "Upma",
       des: "Healthy dish with deliciousness",
-      price: "Rs.125"
+      price: 125
     },
     {
       id: "M4",
       mealName: "Upma",
       des: "Healthy dish with deliciousness",
-      price: "Rs.125"
+      price: 125
     },
     {
       id: "M5",
       mealName: "Upma",
       des: "Healthy dish with deliciousness",
-      price: "Rs.125"
+      price: 125
     }
   ];
   return (
@@ -40,7 +40,7 @@ const AvalableMeals = () => {
         <div className="column" key={meal.id}>
           <div className="card">
             <div className="card__overlay">
-              <MealItemForm foodName={meal.mealName} mealId={meal.id} />
+              <MealItemForm meal={meal}/>
             </div>
             <img src={MealImg} alt="A table full of delecious food" />
             <h1>{meal.mealName}</h1>
@@ -49,7 +49,7 @@ const AvalableMeals = () => {
                 {meal.des}
               </i>
             </p>
-            <b>{meal.price}</b>{" "}
+            <b>Rs.{meal.price}</b>
           </div>
         </div>
       )}
