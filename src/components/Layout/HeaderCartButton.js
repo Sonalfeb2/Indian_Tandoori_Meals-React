@@ -1,7 +1,11 @@
 import CartIcon from "../Cart/CartIcon";
-const cartValue = 0;
+import CartContext from "../../store/Cart_Context";
+import { useContext } from "react";
 const CartBtn = (props) => {
-
+const ctx = useContext(CartContext);
+const ctxAmount = ctx.items.reduce((curr,item)=>{
+  return curr = curr + item.amount
+},0)
   return (
     <button onClick={()=>props.showCartHandler()}>
       <span>
@@ -9,7 +13,7 @@ const CartBtn = (props) => {
       </span>
       <span>Your Cart </span>
       <span className="cartvalue">
-        {cartValue}
+        {ctxAmount}
       </span>
     </button>
   );

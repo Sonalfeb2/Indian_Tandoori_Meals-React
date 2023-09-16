@@ -1,4 +1,5 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
+import { CartContextProvider } from "../store/Cart_Context";
 import Header from "./Layout/Header";
 import Meals from "./Meals/Meals";
 import Cart from "./Cart/Cart";
@@ -8,13 +9,13 @@ const Home = () => {
     setShowCart(!showCart);
   };
   return (
-    <Fragment>
+    <CartContextProvider>
       <Header showCartHandler={showCartHandler} />
       {showCart && <Cart showCartHandler={showCartHandler} />}
       <main>
         <Meals />
       </main>
-    </Fragment>
+    </CartContextProvider>
   );
 };
 export default Home;
