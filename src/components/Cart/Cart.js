@@ -5,13 +5,17 @@ import CartContext from "../../store/Cart_Context";
 import { useContext } from "react";
 const Cart = props => {
   const ctx = useContext(CartContext);
+  const removeItem = (id) =>{
+    ctx.removeItem(id);
+  }
   return (
     <Modal onClose={props.showCartHandler}>
       <div>
         <ul>
           {ctx.items.map(item =>
-            <li>
+            <li key={item.id}>
               {item.mealName}-{item.price} , Quantity {item.count}
+              <Button CartHandler={()=>removeItem(item.id)}>Remove</Button>
             </li>
           )}
         </ul>
@@ -22,7 +26,7 @@ const Cart = props => {
         </div>
         <hr />
         <div className="open_close">
-          <Button showCartHandler={props.showCartHandler}>Close</Button>
+          <Button CartHandler={props.showCartHandler}>Close</Button>
           <Button>Order</Button>
         </div>
       </div>

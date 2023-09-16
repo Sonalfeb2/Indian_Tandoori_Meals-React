@@ -25,7 +25,7 @@ const MealItemForm = props => {
         defaultValue={0}
         ref={addItemRef}
       />
-      <Button showCartHandler={inputHandler}>Add to Cart</Button>
+      <Button CartHandler={inputHandler}>Add to Cart</Button>
     </div>
   );
 };

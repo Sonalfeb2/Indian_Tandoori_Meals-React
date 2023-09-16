@@ -1,8 +1,8 @@
 import "./Button.css";
 const Button = props => {
     const btnHandler = () =>{
-        if(props.showCartHandler){
-            props.showCartHandler();
+        if(props.CartHandler){
+            props.CartHandler();
         }
         else{
             console.log('Ordering...')
