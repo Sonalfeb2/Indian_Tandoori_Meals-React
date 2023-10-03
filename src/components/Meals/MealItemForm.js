@@ -7,12 +7,16 @@ const MealItemForm = props => {
   const ctx = useContext(CartContext);
   const inputHandler = () => {
     const count = addItemRef.current.value;
+    if(count>0){
     ctx.addItem({
       id: props.meal.id,
       mealName: props.meal.mealName,
       price: props.meal.price,
       count: Number(count)
-    });
+    });}
+    else{
+      console.log('Atleast add one item')
+    }
   };
   return (
     <div className="overlay__form">
